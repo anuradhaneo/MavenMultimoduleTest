@@ -7,7 +7,7 @@
     <groupId>com.acme.test</groupId>
     <artifactId>MavenMultimoduleTest</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <modules>
         <module>Module_1</module>
         <module>Module_2</module>
