@@ -1,4 +1,5 @@
 language: java
+java: 1
 notifications:
   email:
   - anuradha.neo@gmail.com
@@ -7,9 +8,9 @@ env:
     secure: fGOwwPyKXDEadbnAUFelSoIcNQZWt5+vNy3r71ixjSAcvTzTfK3IDPiv1q9Z3LPMkfOH7L80PuSw2lf9btRqehwHN9enfDz1Vsk+HKVyH6MqPmVTHF/XOo6hFrc64XkVjbmaApZo7ayXrOlwAiMQBEb2RSffQ8LBhOSFkVeHDCG8wpH3UY960V2c6N8vvqs0weHeG/xb49qvnTlqrpcfV4DMTL0htg+N05pVlUqZPbvvGBL5iB6ZXa9G2wN0YGKVFJt+ltBvTLMgLvaXlri4cAfhHBs1lO672+Msu6g4gITNzB9JN6pOt5Cl1aTXERKgs3WuTJUaVTyQyEf0gtlmdqVt7UDuBg9BgsBaaFwRj3EMLmodCK+jq7vJp9EJirNlBx5aA35WMANaAKhuGR6d1PgZc7g4GNE/f7cy5TndwzrL4NGb5Lf8HHC3g6EUJHhwNI+BJZXfxv+5iSE3GkmMedADR9wEo2XPEZtRQ0h0KMXHtdJP532apN9qBr0TCnT5xtGVrOd8a+vB5etnfUHsQybYdPbD/KBFxJCePR42pz5QDv9sy5SuGHN2UincDxItd/S47MeXQ0zF4EC5xliODtF8+UShvyO6eGYRX6g5kekHH02JUWC0VF3LujYSlhzYigKDP0+CTM85pZh62q/nVjLkbYoISdjNaOkNrzf+9to=
 deploy:
   provider: releases
-  api_key: $GITHUB_TOKEN
-  file_glob: true
-  file: **/target/*.jar
+  api_key:
+    secure: PzphgZzRN70exDijtTmAjtL4vjDlovQiqjDCCoZRw2yhq0leknLy4u5RJol+whlZfK88sCqcbiKLVSF35Y9YJtgFVVagTY+DpynwJcIhIcfTsLSN7eycaSBOSzUszsCzb7Z7tzSeCIaE0YE18H6s042xu6kfRCW0X2rP3IP3GrLbB8Qod5FYDYjDECzfgQ47z/SGXZL22UfLC0vbGdBUBH0FR/Eri7FwXA3JrtZ7VHxvWtJ0LaMTKmbsgBUFznuo3ougc66BvArVf1i4s1z6mWEEey0OvQi7ZYIhMv8rV3JKRscfqb42tLkptq4NxBGcTjOdR3jV3ZdgCMsDvHhMHDWDcrktAZICNm4XksedJhxm7n7FQytymQufahcRhqW9N80ly/qsnPfzjXeYIms3F4dclrbeaqo/QhwldZztsrbLJ6lxvTJNDnentO75bINh4sFTmehZYV5ju4HkeTM1I3Jyte8YtCcguYqX/OynM0kSQYyXpFJ12EVXihPfp98ySLOx0Bya7i/Adu8/KAKgzhZ0dIiHi8+Meoe7M32gTP+vfj46Ag1GvcUzVU6bsF+h/OTmw5eE55NwKd2PYyO8ncriA/LEvh/iQ9x9/mduEDU7hhNDG1VPeAxjMZQpWJmNYONb2whOpNggU07czYBZY+yJPnkUJUwBC0RGOARsizY=
+  file: "**/target/*.jar"
   skip_cleanup: true
   on:
-    tags: true
+    repo: anuradhaneo/MavenMultimoduleTest
