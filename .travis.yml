@@ -7,7 +7,7 @@ env:
     secure: fGOwwPyKXDEadbnAUFelSoIcNQZWt5+vNy3r71ixjSAcvTzTfK3IDPiv1q9Z3LPMkfOH7L80PuSw2lf9btRqehwHN9enfDz1Vsk+HKVyH6MqPmVTHF/XOo6hFrc64XkVjbmaApZo7ayXrOlwAiMQBEb2RSffQ8LBhOSFkVeHDCG8wpH3UY960V2c6N8vvqs0weHeG/xb49qvnTlqrpcfV4DMTL0htg+N05pVlUqZPbvvGBL5iB6ZXa9G2wN0YGKVFJt+ltBvTLMgLvaXlri4cAfhHBs1lO672+Msu6g4gITNzB9JN6pOt5Cl1aTXERKgs3WuTJUaVTyQyEf0gtlmdqVt7UDuBg9BgsBaaFwRj3EMLmodCK+jq7vJp9EJirNlBx5aA35WMANaAKhuGR6d1PgZc7g4GNE/f7cy5TndwzrL4NGb5Lf8HHC3g6EUJHhwNI+BJZXfxv+5iSE3GkmMedADR9wEo2XPEZtRQ0h0KMXHtdJP532apN9qBr0TCnT5xtGVrOd8a+vB5etnfUHsQybYdPbD/KBFxJCePR42pz5QDv9sy5SuGHN2UincDxItd/S47MeXQ0zF4EC5xliODtF8+UShvyO6eGYRX6g5kekHH02JUWC0VF3LujYSlhzYigKDP0+CTM85pZh62q/nVjLkbYoISdjNaOkNrzf+9to=
 deploy:
   provider: releases
-  api_key: "$GITHUB_TOKEN"
+  api_key: $GITHUB_TOKEN
   file_glob: true
   file: **/target/*.jar
   skip_cleanup: true
